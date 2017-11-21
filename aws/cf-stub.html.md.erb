@@ -255,9 +255,9 @@ properties:
         keys:
           key-1:
             signingKey: |
-              -----BEGIN RSA PRIVATE KEY-----
-              MIICXgIBAAKBgQDfTLadf6QgJeS2XXImEHMsa+1O7MmIt44xaL77N2K+J/JGpfV3
-              AnkyB06wFZ02sBLB7hko42LIsVEOyTuUBird/3vlyHFKytG7UEt60Fl88SbAEfsU
+              -----BEGIN EXAMPLE RSA PRIVATE KEY-----
+              EXAMPLEaaaAKBgQDfTLadf6QgJeS2XXImEHMsa+1O7MmIt44xaL77N2K+J/JGpfV3
+              EXAMPLEaaa02sBLB7hko42LIsVEOyTuUBird/3vlyHFKytG7UEt60Fl88SbAEfsU
               JN1i1aSUlunPS/NCz+BKwwKFP9Ss3rNImE9Uc2LMvGy153LHFVW2zrjhTwIDAQAB
               AoGBAJDh21LRcJITRBQ3CUs9PR1DYZPl+tUkE7RnPBMPWpf6ny3LnDp9dllJeHqz
               a3ACSgleDSEEeCGzOt6XHnrqjYCKa42Z+Opnjx/OOpjyX1NAaswRtnb039jwv4gb
@@ -269,7 +269,7 @@ properties:
               AGuNpReYucwVGYet+LuITyjs/krp3qfPhhByhtndk4cBA5H0i4ACodKyC6Zl7Tmf
               oYaZoYWi6DzbQQUaIsKxAkEA2rXQjQFsfnSm+w/9067ChWg46p4lq5Na2NpcpFgH
               waZKhM1W0oB8MX78M+0fG3xGUtywTx0D4N7pr1Tk2GTgNw==
-              -----END RSA PRIVATE KEY-----
+              -----END EXAMPLE RSA PRIVATE KEY-----
     </code></pre></td>
     <td>Generate a PEM-encoded RSA key pair. This creates <code>jwt-key.pem.pub</code>, which contains your public key, and <code>jwt-key.pem</code>, which contains your private key.<br/>
     You can generate a key pair by using the command <code>openssl rsa -in jwt-key.pem -pubout > key.pub</code>. This process creates <code>jwt-key.pem.pub</code>, which contains your public key, and <code>jwt-key.pem</code>, which contains your private key. Paste in the full private key, including the <code>BEGIN</code> and <code>END</code> delimiter lines, under <code>signingKey</code>.</br>

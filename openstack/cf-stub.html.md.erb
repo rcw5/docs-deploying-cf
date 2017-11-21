@@ -222,9 +222,9 @@ properties:
       PUBLIC_KEY
       -----END PUBLIC KEY-----
       signing_key: JWT_SIGNING_KEY
-      -----BEGIN RSA PRIVATE KEY-----
+      -----BEGIN EXAMPLE RSA PRIVATE KEY-----
       RSA_PRIVATE_KEY
-      -----END RSA PRIVATE KEY-----
+      -----END EXAMPLE RSA PRIVATE KEY-----
     </code></pre></td>
     <td>Generate a PEM-encoded RSA key pair, and replace <code>JWT_SIGNING_KEY</code> with the private key, and <code>JWT_VERIFICATION_KEY</code> with the corresponding public key. You can generate a key pair by using the command <code>openssl rsa -in jwt-key.pem -pubout > key.pub</code>. This process creates <code>jwt-key.pem.pub</code>, which contains your public key, and <code>jwt-key.pem</code>, which contains your private key.<br/>
     Paste in the full keys, including the <code>BEGIN</code> and <code>END</code> delimiter lines.
@@ -284,9 +284,9 @@ jobs:
     properties:
       ha_proxy:
         ssl_pem: |
-          -----BEGIN RSA PRIVATE KEY-----
+          -----BEGIN EXAMPLE RSA PRIVATE KEY-----
           RSA_PRIVATE_KEY
-          -----END RSA PRIVATE KEY-----
+          -----END EXAMPLE RSA PRIVATE KEY-----
           -----BEGIN CERTIFICATE-----
           SSL_CERTIFICATE_SIGNED_BY_PRIVATE_KEY
           -----END CERTIFICATE-----
